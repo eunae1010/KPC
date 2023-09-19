@@ -355,10 +355,10 @@ main {
 }
 
 .content {
-  margin: -10px 10px 40px;
+  margin: -10px 0 40px;
 }
 .content h2 {
-  margin-bottom: 10px;
+  margin: 0 0 10px 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
@@ -366,6 +366,7 @@ main {
 .content ul {
   display: flex;
   column-gap: 20px;
+  padding: 0 10px;
 }
 .content ul li {
   flex: 1;
@@ -374,6 +375,8 @@ main {
 .content img {
   width: 100%;
 }
+.content p {
+}
 .con_title {
   margin: 10px 0;
   font-weight: 700;
@@ -381,36 +384,29 @@ main {
 
 footer {
   width: 100%;
+  padding: 30px 10px;
   border-top: 1px solid #ddd;
 }
 .service_info {
-  margin: 30px 0 10px;
+  margin-bottom: 10px;
   font-size: 13px;
 }
 .service_info ul {
   display: flex;
 }
-.service_info .line::after {
-  content: "";
-  border-right: 1px solid #666;
-}
 .service_info li a {
-  margin: 10px;
+  margin-right: 10px;
 }
 .wrap_info {
   width: 100%;
-  margin: 0 10px;
 }
 .footer_logo {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .footer_add {
   width: 100%;
   color: #666;
   font-size: 12px;
-}
-.footer_add dl {
-  padding-bottom: 30px;
 }
 .footer_add dt {
   float: left;
@@ -432,6 +428,10 @@ footer {
   }
   .tab {
     width: 100%;
+  }
+
+  .content ul {
+    column-gap: 10px;
   }
 
   .quickMenu {

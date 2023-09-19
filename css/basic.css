@@ -84,6 +84,7 @@ header {
   display: flex;
   align-items: center;
   height: 60px;
+  padding: 0 10px;
   border-bottom: 1px solid #ddd;
 }
 .logo {
@@ -354,7 +355,7 @@ main {
 }
 
 .content {
-  margin: -10px 0 40px 0;
+  margin: -10px 10px 40px;
 }
 .content h2 {
   margin-bottom: 10px;
@@ -398,6 +399,7 @@ footer {
 }
 .wrap_info {
   width: 100%;
+  margin: 0 10px;
 }
 .footer_logo {
   margin: 5px 0;
@@ -438,6 +440,11 @@ footer {
 }
 
 @media (max-width:430px) {
+  .notice_txt a {
+    font-size: 10px;
+    line-height: 45px;
+  }
+
   .quickMenu ul {
     display: flex;
     flex-wrap: wrap;

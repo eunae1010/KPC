@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/basic.css">
-  <!-- <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="js/js.js"></script>
 </head>
 <body>
@@ -39,19 +39,25 @@
           <li><a href="#">확인서신청</a></li>
           <li><a href="#">자격증신청</a></li>
           <li><a href="#">시험일정</a></li>
+          <span class="nav_bar"></span>
         </ul>
       </div>
     </header>
     <div class="lnb">
       <div class="lnb_login">
+        <button class="lnb_close_btn">
+          <span class="lnb_close">닫기</span>
+        </button>
         <a href="#">
           <img src="img/login_icon.png" alt="">
-          로그인
+          <p>로그인</p>
         </a>
       </div>
       <ul class="lnb_list">
         <li>
-          <a href="#">자격소개</a>
+          <button class="lnb_btn">자격소개
+            <span class="lnb_toggle">서브</span>
+          </button>
           <ul class="lnb_sub">
             <li><a href="#">인사말</a></li>
             <li><a href="#">자격소개</a></li>
@@ -61,7 +67,9 @@
           </ul>
         </li>
         <li>
-          <a href="#">접수/수험표확인</a>
+          <button class="lnb_btn">접수/수험표확인
+            <span class="lnb_toggle">서브</span>
+          </button>
           <ul class="lnb_sub">
             <li><a href="#">시험일정 안내</a></li>
             <li><a href="#">원서 사진 등록 규정</a></li>
@@ -71,7 +79,9 @@
           </ul>
         </li>
         <li>
-          <a href="#">합격확인/자격증신청</a>
+          <button class="lnb_btn">합격확인/자격증신청
+            <span class="lnb_toggle">서브</span>
+          </button>
           <ul class="lnb_sub">
             <li><a href="#">합격자발표</a></li>
             <li><a href="#">자격증 신청</a></li>
@@ -83,7 +93,9 @@
           </ul>
         </li>
         <li>
-          <a href="#">자료실</a>
+          <button class="lnb_btn">자료실
+            <span class="lnb_toggle">서브</span>
+          </button>
           <ul class="lnb_sub">
             <li><a href="#">소통하기</a></li>
             <li><a href="#">보수교육</a></li>
@@ -92,7 +104,9 @@
           </ul>
         </li>
         <li>
-          <a href="#">고객센터</a>
+          <button class="lnb_btn">고객센터
+            <span class="lnb_toggle">서브</span>
+          </button>
           <ul class="lnb_sub">
             <li><a href="#">KPC 새소식</a></li>
             <li><a href="#">이용안내</a></li>
@@ -182,12 +196,18 @@
       <div class="tabs">
         <div class="tab tab1">
           <ul class="tabMenu">
-            <li class="tabM1">원서접수 중</li>
-            <li class="tabM2">수험표 공고</li>
-            <li class="tabM3">합격자 발표</li>
+            <li class="tabM1 tabM_on">
+              <a href="#tabB1">원서접수 중</a>
+            </li>
+            <li class="tabM1" style="border-left:1px solid #ddd; border-right:1px solid #ddd">
+              <a href="#tabB2">수험표 공고</a>
+            </li>
+            <li class="tabM1">
+              <a href="#tabB3">합격자 발표</a>
+            </li>
           </ul>
           <div class="tabBody">
-            <div class="tab_box tabB1">
+            <div class="tab_box open" id="tabB1">
               <ul>
                 <li>
                   <a href="#">
@@ -237,7 +257,7 @@
                 </a>
               </div>
             </div>
-            <div class="tab_box tabB2">
+            <div class="tab_box" id="tabB2">
               <ul>
                 <li>
                   <a href="#">
@@ -287,7 +307,7 @@
                 </a>
               </div>
             </div>
-            <div class="tab_box tabB3">
+            <div class="tab_box" id="tabB3">
               <ul>
                 <li>
                   <a href="#">
@@ -341,12 +361,18 @@
         </div>
         <div class="tab tab2">
           <ul class="tabMenu">
-            <li class="tabM1">자격소식</li>
-            <li class="tabM2">자격시행</li>
-            <li class="tabM3">뉴스·보도</li>
+            <li class="tabM2 tabM_on">
+              <a href="#tabB4">자격소식</a>
+            </li>
+            <li class="tabM2" style="border-left:1px solid #ddd; border-right:1px solid #ddd">
+              <a href="#tabB5">자격시행</a>
+            </li>
+            <li class="tabM2">
+              <a href="#tabB6">뉴스·보도</a>
+            </li>
           </ul>
           <div class="tabBody">
-            <div class="tab_box tabB4">
+            <div class="tab_box open" id="tabB4">
               <ul>
                 <li>
                   <a href="#">
@@ -388,7 +414,7 @@
                 </a>
               </div>
             </div>
-            <div class="tab_box tabB5">
+            <div class="tab_box" id="tabB5">
               <ul>
                 <li>
                   <a href="#">
@@ -430,7 +456,7 @@
                 </a>
               </div>
             </div>
-            <div class="tab_box tabB6">
+            <div class="tab_box" id="tabB6">
               <ul>
                 <li>
                   <a href="#">

@@ -63,6 +63,34 @@ var swiper = new Swiper(".swiper", {
 });
 
 // 탭 메뉴
+$('.tab1 .tabMenu li').click(function(e) {
+  e.preventDefault();
+
+  let num = $(this).index();
+  console.log(num);
+
+  $('.tab1 .tabMenu li').removeClass('tabM1_on');
+  $(this).addClass('tabM1_on');
+
+  $('.tab1 .tabBody > div').hide();
+  $('.tab1 .tabBody > div').eq(num).show();
+});
+
+$('.tab2 .tabMenu li').click(function(e) {
+  e.preventDefault();
+
+  let num = $(this).index();
+  console.log(num);
+
+  $('.tab2 .tabMenu li').removeClass('tabM2_on');
+  $(this).addClass('tabM2_on');
+
+  $('.tab2 .tabBody > div').hide();
+  $('.tab2 .tabBody > div').eq(num).show();
+});
+
+
+
 // const tabBtn = document.querySelectorAll('.tabMenu li');
 // const tabBox = document.querySelectorAll('.tab_box');
 // let tabActive = '';
@@ -78,22 +106,20 @@ var swiper = new Swiper(".swiper", {
 //   });
 // }
 
-
-
-const tabBtn1 = document.querySelectorAll('.tabM1');
-const tabBtn2 = document.querySelectorAll('.tabM2');
-const tabBox = document.querySelectorAll('.tab_box');
-let num = 0;
-tabBtn1.forEach(function(btn, idx) {
-  btn.onclick = function(e) {
-    e.preventDefault();
-    tabBtn1[num].classList.remove('tabM_on');
-    this.classList.add('tabM_on');
-    num = idx;
-    if(tabBtn1[num].classList.contains('tabM_on')) {
-      tabBox.getElementById(`#tabB${num}`).style.display = 'block';
-    } else {
-      // document.querySelector(`#tabB${idx}`).classList.remove('open');
-    };
-  };
-});
+// const tabBtn1 = document.querySelectorAll('.tabM1');
+// const tabBtn2 = document.querySelectorAll('.tabM2');
+// const tabBox = document.querySelectorAll('.tab_box');
+// let num = 0;
+// tabBtn1.forEach(function(btn, idx) {
+//   btn.onclick = function(e) {
+//     e.preventDefault();
+//     tabBtn1[num].classList.remove('tabM_on');
+//     this.classList.add('tabM_on');
+//     num = idx;
+//     if(tabBtn1[num].classList.contains('tabM_on')) {
+//       tabBox.getElementById(`#tabB${num}`).style.display = 'block';
+//     } else {
+//       // document.querySelector(`#tabB${idx}`).classList.remove('open');
+//     };
+//   };
+// });

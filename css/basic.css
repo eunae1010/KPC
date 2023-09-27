@@ -76,8 +76,6 @@ button {
 }
 
 header {
-  /* position: relative;
-  top: 0; */
   width: 100%;
   margin: auto;
   background: #fff;
@@ -91,10 +89,6 @@ header {
   border-bottom: 1px solid #ddd;
 }
 .logo {
-  /* position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%); */
   width: 100%;
 }
 .logo a {
@@ -103,12 +97,6 @@ header {
 }
 .logo img {
   width: 100%;
-}
-.menu_btn {
-  /* position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%); */
 }
 .menu_icon {
   display: block;
@@ -406,6 +394,7 @@ main {
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+  cursor: pointer;
 }
 .content ul {
   display: flex;
@@ -479,8 +468,8 @@ footer {
     width: 100%;
   }
 
-  .content ul {
-    column-gap: 10px;
+  .con_mo {
+    display: none;
   }
 
   .quickMenu {
@@ -500,5 +489,18 @@ footer {
     justify-content: space-evenly;
     column-gap: 40px;
     row-gap: 20px;
+  }
+
+  .content {
+    margin: -10px 0 30px;
+  }
+  .content li:nth-of-type(3) {
+    display: none;
+  }
+  .con_title {
+    font-size: 13px;
+  }
+  .con_text {
+    display: none;
   }
 }
